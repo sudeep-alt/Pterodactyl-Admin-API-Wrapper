@@ -13,7 +13,7 @@ Easily manage your Pterodactyl server resources programmatically using Python. T
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/YourUsername/PteroAdmin.git
+git clone https://github.com/sudeep-alt/PteroAdmin.git
 ```
 
 2. **Move the `PteroAdmin.py` file to your project folder** (or anywhere your Python code can import it from).
@@ -54,60 +54,6 @@ API_URL = "http://yourpanel.example.com"
 
 client = AdminClient(API_KEY, API_URL)
 ```
----
-
-# PteroAdmin
-
-**Python wrapper for the Pterodactyl Admin API**
-
-Easily manage your Pterodactyl server resources programmatically using Python. This wrapper supports **Users, Servers, Nodes, Locations, Allocations, Eggs, and Nests**.
-
-**Author:** Sudeep
-
----
-
-## **Installation (Local)**
-
-Since this is not published on PyPI, you can install it locally:
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/YourUsername/PteroAdmin.git
-```
-
-2. **Move the `PteroAdmin.py` file to your project folder** (or anywhere your Python code can import it from).
-
-3. **Install dependencies**
-
-```bash
-pip install requests
-```
-
-4. **Import in your project**
-
-```python
-from PteroAdmin import AdminClient, PteroAdminError
-```
-
----
-
-## **Usage**
-
-### **Setup**
-
-```python
-import pprint
-from PteroAdmin import AdminClient, PteroAdminError
-
-pp = pprint.PrettyPrinter(indent=2)
-
-API_KEY = "your_application_api_key"
-API_URL = "http://yourpanel.example.com"
-
-client = AdminClient(API_KEY, API_URL)
-```
-
 ---
 
 ### **User Management**
@@ -153,7 +99,7 @@ pp.pprint(server.__dict__)
 
 ---
 
-### **Locations & Nodes**
+### **Locations**
 
 ```python
 # List locations
@@ -164,7 +110,12 @@ for loc in locations:
 # Get a specific location
 location = client.get_location(location_id=1)
 pp.pprint(location.__dict__)
+```
 
+---
+
+### **Nodes**
+```python
 # List nodes
 nodes = client.list_nodes()
 for node in nodes:
@@ -173,9 +124,18 @@ for node in nodes:
 # Get a specific node
 node = client.get_node(node_id=9)
 pp.pprint(node.raw)
-```
 
----
+# Create a Node
+node = client.create_node(
+        name="TestNode",
+        location_id=1,
+        fqdn="node.example.com",
+        scheme="https",
+        memory=1024,
+        disk=10000
+    )
+    pp.pprint(node.raw)
+```
 
 ### **Allocations**
 
