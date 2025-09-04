@@ -207,7 +207,7 @@ Some features of the Pterodactyl Admin API are not currently implemented in this
 **Reason:** The Pterodactyl API does not allow programmatic creation of nests or eggs.
 
 ### Suspend Server / Delete Server
-**Reason:** [I forgor 😔](https://media1.tenor.com/m/0dJlgv_WWM0AAAAd/i-forgor.gif)
+**Reason:** I forgor
 
 ## License
 MIT License
