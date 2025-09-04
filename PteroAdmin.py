@@ -1,3 +1,15 @@
+# -----------------------------------------------------------------------------
+# PteroAdmin - Pterodactyl Admin API Wrapper
+# Copyright (c) 2025 Sudeep
+# All rights reserved.
+#
+# Licensed under the MIT License. You may not use this file except in compliance
+# with the License. You may obtain a copy of the License at:
+# https://opensource.org/licenses/MIT
+#
+# Author: Sudeep
+# -----------------------------------------------------------------------------
+
 import requests
 import json
 
