@@ -1,6 +1,6 @@
-# PteroAdmin
+# Pterodactyl Application API Wrapper
 
-**Python wrapper for the Pterodactyl Application API**
+**Python wrapper for the Pterodactyl Application API (for admins only)**
 
 Easily manage your Pterodactyl server resources programmatically using Python. This wrapper supports **Users, Servers, Nodes, Locations, Allocations, Eggs, and Nests**.
 
@@ -13,7 +13,7 @@ Easily manage your Pterodactyl server resources programmatically using Python. T
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/sudeep-alt/PteroAdmin.git
+git clone https://github.com/sudeep-alt/Pterodactyl-Application-API-Wrapper.git
 ```
 
 2. **Move the `PteroAdmin.py` file to your project folder** (or anywhere your Python code can import it from).
