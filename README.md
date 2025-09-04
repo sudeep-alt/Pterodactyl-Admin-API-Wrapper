@@ -196,3 +196,18 @@ except PteroAdminError as e:
 * For Pterodactyl API documentation, see [here](https://pterodactyl-api-docs.netvpx.com/)
 
 ---
+## Not Implemented / Limitations
+
+Some features of the Pterodactyl Admin API are not currently implemented in this wrapper:
+
+### Create Server
+**Reason:** Requires handling nested objects, allocations, egg selections, and startup variables all at once. This involves multiple API calls and complex validation.
+
+### Create Nest / Egg
+**Reason:** The Pterodactyl API does not allow programmatic creation of nests or eggs.
+
+### Suspend Server / Delete Server
+**Reason:** [I forgor 😔](https://media1.tenor.com/m/0dJlgv_WWM0AAAAd/i-forgor.gif)
+
+## License
+MIT License
