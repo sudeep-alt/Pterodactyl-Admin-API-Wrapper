@@ -39,7 +39,7 @@ from PteroAdmin import AdminClient, PteroAdminError
    * Go to **Admin Panel → API → Application Keys → Create New Key**
    * Give it a **name**, eg. `MYAPIKEY`
    * **Select All Permissions** (both **read** and **write**)
-   * Copy the key safely, you’ll need it in your Python code
+   * Copy the key safely, you’ll need it in your code
 
 2. **Initialize the client**
 
