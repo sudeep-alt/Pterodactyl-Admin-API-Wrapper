@@ -37,7 +37,7 @@ from PteroAdmin import AdminClient, PteroAdminError
 1. **Create an Application API Key** in your Pterodactyl panel:
 
    * Go to **Admin Panel → API → Application Keys → Create New Key**
-   * Give it a **name**, eg. `MyAPIKey`
+   * Give it a **name**, eg. `MYAPIKEY`
    * **Select All Permissions** (both **read** and **write**)
    * Copy the key safely, you’ll need it in your Python code
 
