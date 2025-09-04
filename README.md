@@ -54,11 +54,6 @@ API_URL = "http://yourpanel.example.com"
 
 client = AdminClient(API_KEY, API_URL)
 ```
-
----
-
-Perfect! Here's a polished README that reflects your final code, mentions usage, and clearly explains local installation including cloning the repo. I’ve added you as the author and set it up nicely for GitHub.
-
 ---
 
 # PteroAdmin
