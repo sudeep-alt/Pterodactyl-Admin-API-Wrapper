@@ -344,3 +344,10 @@ class AdminClient:
     def get_nest(self, nest_id):
         data = self._request("get", f"/nests/{nest_id}")
         return Nest(data)
+
+
+
+
+
+# © 2025 Sudeep
+# -----------------------------------------------------------------------------
