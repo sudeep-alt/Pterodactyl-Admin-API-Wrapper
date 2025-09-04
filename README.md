@@ -1,6 +1,6 @@
 # PteroAdmin
 
-**Python wrapper for the Pterodactyl Admin API**
+**Python wrapper for the Pterodactyl Application API**
 
 Easily manage your Pterodactyl server resources programmatically using Python. This wrapper supports **Users, Servers, Nodes, Locations, Allocations, Eggs, and Nests**.
 
